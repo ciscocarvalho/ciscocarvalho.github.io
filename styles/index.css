@@ -1,0 +1,103 @@
+:root {
+    --black: #010013;
+    --white: #fff;
+    --border-color: var(--white);
+    --purple: rgb(21, 7, 75);
+    --button-transition-duration: .5s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+p,
+h1,
+h2 {
+    cursor: default;
+}
+
+main {
+    background-color: var(--black);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    gap: 20px;
+}
+
+.about section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 40px;
+}
+
+.skills,
+.learning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-links {
+    align-self: flex-end;
+}
+
+.profile,
+.about-links a,
+.skill-logos-container,
+.learning-logos-container {
+    user-select: none;
+}
+
+.skill-logos-container,
+.learning-logos-container {
+    display: flex;
+    gap: 10px;
+}
+
+.skill-logos-container img,
+.learning-logos-container img {
+    width: 80px;
+    transition-duration: .25s;
+}
+
+.skill-logos-container img:hover,
+.learning-logos-container img:hover {
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.about-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-links a {
+    padding: 4px 15px;
+    border: 2px solid var(--border-color);
+    transition-duration: var(--button-transition-duration);
+}
+
+.about-links a:hover {
+    background-color: white;
+    color: black;
+    transition: var(--button-transition-duration) ease-in-out;
+}
