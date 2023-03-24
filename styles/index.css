@@ -71,14 +71,14 @@ main {
     gap: 10px;
 }
 
-.skill-logos-container img,
-.learning-logos-container img {
-    width: 80px;
+.skill-logos-container i,
+.learning-logos-container i {
+    font-size: 80px;
     transition-duration: .25s;
 }
 
-.skill-logos-container img:hover,
-.learning-logos-container img:hover {
+.skill-logos-container i:hover,
+.learning-logos-container i:hover {
     transform: scale(1.1);
     transition-duration: 1.5s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
