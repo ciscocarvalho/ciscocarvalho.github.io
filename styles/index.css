@@ -2,8 +2,9 @@
     --black: #010013;
     --white: #fff;
     --border-color: var(--white);
-    --purple: rgb(21, 7, 75);
     --button-transition-duration: .25s;
+    --logos-transition-duration-out: .25s;
+    --logos-transition-duration-in: 1s;
 }
 
 * {
@@ -75,14 +76,14 @@ main {
 .learning-logos-container i {
     padding: 10px;
     font-size: 80px;
-    transition-duration: .25s;
+    transition-duration: var(--logos-transition-duration-out);
     border-radius: 20px;
 }
 
 .skill-logos-container i:hover,
 .learning-logos-container i:hover {
     transform: scale(1.1);
-    transition-duration: 1s;
+    transition-duration: var(--logos-transition-duration-in);
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     background-color: var(--white);
 }
@@ -100,7 +101,7 @@ main {
 }
 
 .about-links a:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
     transition: var(--button-transition-duration) ease-in-out;
 }
