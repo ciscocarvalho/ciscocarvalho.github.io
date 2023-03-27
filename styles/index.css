@@ -68,13 +68,15 @@ main {
 .skill-logos-container,
 .learning-logos-container {
     display: flex;
-    gap: 10px;
+    gap: 40px;
 }
 
 .skill-logos-container i,
 .learning-logos-container i {
+    padding: 10px;
     font-size: 80px;
     transition-duration: .25s;
+    border-radius: 20px;
 }
 
 .skill-logos-container i:hover,
@@ -82,6 +84,7 @@ main {
     transform: scale(1.1);
     transition-duration: 1.5s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: var(--white);
 }
 
 .about-links {
