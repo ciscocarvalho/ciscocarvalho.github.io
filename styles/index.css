@@ -3,7 +3,7 @@
     --white: #fff;
     --border-color: var(--white);
     --purple: rgb(21, 7, 75);
-    --button-transition-duration: .5s;
+    --button-transition-duration: .25s;
 }
 
 * {
