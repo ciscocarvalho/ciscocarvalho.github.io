@@ -82,7 +82,7 @@ main {
 .skill-logos-container i:hover,
 .learning-logos-container i:hover {
     transform: scale(1.1);
-    transition-duration: 1.5s;
+    transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     background-color: var(--white);
 }
