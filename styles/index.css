@@ -22,9 +22,17 @@ h2 {
     cursor: default;
 }
 
-main {
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--black);
-    height: 100vh;
+}
+
+main {
+    width: 660px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +43,6 @@ main {
 .about {
     display: flex;
     justify-content: center;
-    width: 50%;
     gap: 20px;
 }
 
@@ -69,6 +76,7 @@ main {
 .skill-logos-container,
 .learning-logos-container {
     display: flex;
+    width: 100%;
     gap: 40px;
 }
 
@@ -104,4 +112,34 @@ main {
     background-color: var(--white);
     color: var(--black);
     transition: var(--button-transition-duration) ease-in-out;
+}
+
+@media (max-width: 700px) {
+    main {
+        width: 80%;
+    }
+
+    .about section p {
+        text-align: justify;
+    }
+
+    .about section h1 {
+        text-align: center;
+    }
+
+    .about-links {
+        align-self: center;
+    }
+
+    .skill-logos-container,
+    .learning-logos-container {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .skill-logos-container i,
+    .learning-logos-container i {
+        font-size: 60px;
+    }
 }
