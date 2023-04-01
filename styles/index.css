@@ -1,7 +1,7 @@
 :root {
-    --black: #010013;
-    --white: #fff;
-    --border-color: var(--white);
+    --bg-color: #010013;
+    --fg-color: #fff;
+    --border-color: var(--fg-color);
     --button-transition-duration: .25s;
     --logos-transition-duration-out: .25s;
     --logos-transition-duration-in: 1s;
@@ -13,7 +13,7 @@
     padding: 0;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--white);
+    color: var(--fg-color);
 }
 
 p,
@@ -28,7 +28,7 @@ body {
     padding: 40px 0;
     justify-content: center;
     align-items: center;
-    background-color: var(--black);
+    background-color: var(--bg-color);
 }
 
 main {
@@ -51,7 +51,7 @@ main {
 .about .profile {
     width: 200px;
     height: 200px;
-    border: 2px solid var(--white);
+    border: 2px solid var(--fg-color);
     border-radius: 100%;
 }
 
@@ -102,7 +102,7 @@ main {
     transform: scale(1.1);
     transition-duration: var(--logos-transition-duration-in);
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    background-color: var(--white);
+    background-color: var(--fg-color);
 }
 
 .about-links {
@@ -118,8 +118,8 @@ main {
 }
 
 .about-links a:hover {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--fg-color);
+    color: var(--bg-color);
     transition: var(--button-transition-duration) ease-in-out;
 }
 
