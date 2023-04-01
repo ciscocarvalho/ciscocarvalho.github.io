@@ -1,6 +1,6 @@
 :root {
-    --bg-color: #010013;
-    --fg-color: #fff;
+    --bg-color: #121212;
+    --fg-color: #EAEAEA;
     --border-color: var(--fg-color);
     --button-transition-duration: .25s;
     --logos-transition-duration-out: .25s;
