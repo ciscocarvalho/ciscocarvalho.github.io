@@ -1,6 +1,8 @@
 :root {
     --bg-color: #121212;
     --fg-color: #EAEAEA;
+    --accent-color: #32b4ff;
+    --secondary-accent-color: #a4deff;
     --border-color: var(--fg-color);
     --button-transition-duration: .25s;
     --logos-transition-duration-out: .25s;
@@ -20,6 +22,15 @@ p,
 h1,
 h2 {
     cursor: default;
+}
+
+h1 {
+    font-size: 1.75rem;
+    color: var(--accent-color);
+}
+
+.special-text {
+    color: var(--secondary-accent-color);
 }
 
 body {
@@ -118,7 +129,8 @@ main {
 }
 
 .about-links a:hover {
-    background-color: var(--fg-color);
+    background-color: var(--secondary-accent-color);
+    border-color: var(--secondary-accent-color);
     color: var(--bg-color);
     transition: var(--button-transition-duration) ease-in-out;
 }
