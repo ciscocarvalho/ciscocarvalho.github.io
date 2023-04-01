@@ -25,6 +25,7 @@ h2 {
 body {
     min-height: 100vh;
     display: flex;
+    padding: 40px 0;
     justify-content: center;
     align-items: center;
     background-color: var(--black);
@@ -43,7 +44,15 @@ main {
 .about {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
+}
+
+.about .profile {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--white);
+    border-radius: 100%;
 }
 
 .about section {
@@ -141,5 +150,16 @@ main {
     .skill-logos-container i,
     .learning-logos-container i {
         font-size: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about .profile {
+        width: 150px;
+        height: 150px;
     }
 }
